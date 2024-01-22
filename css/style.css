@@ -1,0 +1,959 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+
+/*GENERAL*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f6eddf;
+    color: #004041;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, button {
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.text-gold {
+    color: #b49562;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.flex-container {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.flex-container > .flex-item {
+    -webkit-flex: auto;
+    flex: auto;
+    width: 310px;
+    flex: 2 1 auto;
+}
+
+button,
+input[type="submit"] {
+    background: transparent;
+    border: 2px solid #004041;
+    color: #004041;
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+span {
+    display: block;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    max-width: 70px;
+    z-index: 1;
+    transition-duration: 2s;
+}
+
+.whatsapp img {
+    transition-duration: 2s;
+}
+
+.whatsapp img:hover {
+    transform: rotateY(360deg) !important;
+}
+
+.mb-3 {
+    margin-bottom: 30px;
+}
+
+.redes {
+    display: inline;
+}
+
+/*COLUMNS*/
+
+.full {
+    width: 100%;
+}
+
+.half {
+    width: 49%;
+    display: inline-block;
+}
+
+.third {
+    width: 33%;
+    display: inline-block;
+}
+
+.fourth {
+    width: 24%;
+    display: inline-block;
+}
+
+
+/*NAVBAR*/
+
+nav {
+    background-color: #004041;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #004041;
+    width: 100%;
+    position: fixed;
+    z-index: 11;
+    position: fixed !important;
+  }
+
+.topnav .menu {
+    float: right;
+    padding: 20px 20px;
+}
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #eeddc1;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: transparent;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+
+  .topnav .logo {
+    height: 70px;
+    width: auto;
+  }
+  
+  .topnav .social {
+    padding: 5px;
+    transition-duration: 2s;
+  }
+
+  .topnav .social:hover {
+    background-color: transparent;
+    transform: rotateY(360deg) !important;
+  }
+
+  .topnav .social:hover img,
+  footer .social a:hover img {
+    background: #012929;
+    border-radius: 20px;
+  }
+
+  .topnav .social img {
+    height: 40px;
+    width: auto;
+  }
+
+  .topnav .book {
+    margin-left: 20px;
+}
+
+.topnav .book {
+    display: inline-block;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    margin-left: 20px;
+    color: #004041;
+    border-radius: 15px;
+}
+
+.topnav .book:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #eeddc1;
+      color: #004041;
+      border-radius: 15px;
+      z-index: -2;
+      font-weight: 500;
+      font-size: 1.2rem;
+}
+
+.topnav .book:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      background-color: #012929;
+      color: #eeddc1;
+      transition: all .3s;
+      border-radius: 15px;
+      z-index: -1;
+}
+
+.topnav .book:hover {
+      color: #fff;
+}
+
+.topnav .book:hover:before {
+        width: 100%;
+}
+  
+  
+
+/*MAIN*/
+
+main {
+    background: url(../recursos/slide1.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+main .by-montserrat {
+    color: #eddcc0;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+    margin-top: 130px;
+    letter-spacing: 5px;
+}
+
+main button {
+    font-size: 2rem;
+    font-weight: 100;
+    padding: 10px 40px;
+    border-radius: 25px;
+    margin: 30px 0 20px;
+}
+
+
+.book-here {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.book-here:after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: transparent;
+      border-radius: 10rem;
+      z-index: -2;
+}
+
+.book-here:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      background-color: #004041;
+      transition: all .3s;
+      border-radius: 0rem;
+      z-index: -1;
+}
+
+.book-here:hover {
+      color: #fff;
+}
+
+.book-here:hover:before {
+        width: 100%;
+}
+
+main button:hover {
+    background: transparent;
+    color: white;
+}
+
+main h1 {
+    font-weight: 100;
+    z-index: 1;
+    position: relative;
+}
+
+main .white-box {
+    background-color: white;
+    height: 150px;
+    width: 0px;
+    position: absolute;
+    margin-top: -150px;
+    margin-left: 0px;
+}
+
+main .icons {
+    margin: 130px 0 40px;
+}
+
+main .map {
+    position: absolute;
+    width: 35px;
+    margin-left: -45px;
+}
+
+main .direccion {
+    font-size: 1.2rem;
+    margin-left: 45px;
+    line-height: 1.3;
+}
+
+/*SOMOS*/
+
+#somos {
+    border-top: 80px solid #004041;
+}
+
+#somos .title {
+    padding: 40px 0;
+}
+
+#somos ul {
+    padding-left: 30px;
+}
+
+#somos ul li {
+    list-style: disc;
+    font-weight: bold;
+}
+
+#somos ul li::marker {
+    font-size: 2.2rem;
+}
+
+#somos #direccion {
+    background: #004041;
+    padding: 33px;
+    color: #eddcc0;
+}
+
+#somos .white-box {
+    background: white;
+    padding: 50px;
+    color: #004041;
+}
+
+#somos .doctor {
+    width: 80%;
+}
+
+#somos .play {
+    position: absolute;
+    margin-top: 190px;
+    width: 100px;
+    margin-left: -50px;
+    cursor: pointer;
+    transition-duration: 2s;
+}
+
+#somos .play:hover {
+    margin-top: 180px;
+}
+
+#somos .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#somos .two-thirds {
+    flex-basis: 70%;
+}
+
+#somos .one-third {
+    flex-basis: 30%;
+}
+
+#somos .half {
+    flex-basis: 50%;
+    vertical-align: top;
+}
+
+#somos button {
+    background: #004041;
+    color: white;
+    font-size: 1rem;
+    font-weight: 100;
+    padding: 7px 25px;
+    margin-top: 40px;
+}
+
+#somos button:hover {
+    border: 2px solid #004041;
+    background-color: transparent;
+    color: #004041;
+}
+
+#somos .sintonia-logo {
+    position: absolute;
+    margin-left: -109px;
+    width: 90px;
+    margin-top: -37px;
+    transition-duration: 2s;
+}
+
+#somos .sintonia-logo:hover,
+.whatsapp img:hover {
+    transform: rotateY(360deg) !important;
+}
+
+#somos h3 {
+    font-size: 1.6rem;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+#somos h4 {
+    text-transform: uppercase;
+    font-size: .9rem;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+
+#somos .box .text-gold {
+    font-size: 1.3rem;
+    margin-bottom: 25px;
+}
+
+#somos #direccion img {
+    float: left;
+    width: 25px;
+    margin-right: 15px;
+}
+
+#somos .text {
+    width: 80%;
+}
+
+#somos .firma {
+    width: 80%;
+    margin-top: 40px;
+}
+
+
+/*SERVICIOS*/
+
+#servicios {
+    padding: 100px 0 0;
+}
+
+#servicios p,
+#servicios ul li {
+    font-size: .85rem;
+}
+
+#servicios h3 {
+    font-size: 1.3rem;
+}
+
+#servicios .box {
+    background: white;
+    margin: 10px;
+}
+
+#servicios .box p {
+    padding: 8px 0;
+}
+
+#servicios .box button {
+    margin-top: 20px;
+    position: absolute;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+#servicios .box button:hover {
+    color: white;
+}
+
+.precio {
+    color: white;
+    background: #b49562;
+    padding: 32px 0;
+    border-radius: 40px;
+    font-weight: bold;
+    position: relative;
+    right: 10px;
+    width: 80px;
+    text-align: center;
+    float: right;
+    top: -40px;
+    transition-duration: 2s;
+    cursor: default;
+}
+
+.precio:hover {
+    transform: rotateY(360deg) !important;
+}
+
+.text {
+    padding: 20px;
+    position: relative;
+    min-height: 350px;
+}
+
+/*BIENESTAR*/
+
+#bienestar {
+    line-height: 1.5;
+    padding: 100px 0;
+}
+
+#bienestar ul {
+    padding-left: 20px;
+    margin: 40px 0;
+}
+
+#bienestar ul li {
+    list-style: disc;
+}
+
+#bienestar .flex-container {
+    vertical-align: middle;
+}
+
+#bienestar .flex-item {
+    width: 50%;
+}
+
+#bienestar img {
+    width: 90%;
+}
+
+#bienestar .national-wellness {
+
+}
+
+#bienestar .two-thirds {
+    width: 66%;
+    display: inline-block;
+}
+
+#bienestar .one-third {
+    width: 33%;
+    display: inline-block;
+}
+
+
+/*BODY AND MIND*/
+#body-and-mind {
+    background: url(../recursos/banner.jpg) fixed;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    color: #eddcc0;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    padding: 90px 10px;
+}
+
+#body-and-mind .logo {
+    max-width: 130px;
+    margin: 0 auto;
+    transition-duration: 2s;
+}
+
+#body-and-mind p {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/*CONTÁCTANOS*/
+
+#contactanos .agenda-tu-cita {
+    background-color: #004041;
+    padding: 50px;
+    color: white;
+}
+
+#contactanos .agenda-tu-cita span {
+    text-transform: uppercase;
+}
+
+#contactanos .agenda-tu-cita h2 {
+    margin-bottom: 30px;
+}
+
+#contactanos .agenda-tu-cita input {
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid white;
+    padding: 11px 0;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #f6eddf;
+}
+
+#contactanos .agenda-tu-cita input[type="date"],
+#contactanos .agenda-tu-cita input[type="time"],
+#contactanos .agenda-tu-cita select {
+    appearance: none;
+    color: black;
+    font-family: “Helvetica”, arial, sans-serif;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 1px solid black;
+    background: transparent;
+    padding: 4px;
+    display: inline-block;
+    visibility: visible;
+    width: 100%;
+    padding: 11px 0;
+    filter: invert(1);
+}
+
+#contactanos .agenda-tu-cita select option {
+    color: black;
+}
+
+select:focus-visible, input:focus-visible, textarea:focus-visible {
+    outline: none;
+}
+
+#contactanos .agenda-tu-cita input[type="submit"] {
+    color: white;
+    border: 2px solid white;
+    text-transform: uppercase;
+    width: auto;
+    padding: 7px 30px;
+    font-size: 1.4rem;
+    font-weight: 100;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+#contactanos .agenda-tu-cita input[type="submit"]:hover {
+    background: white;
+    color: #004041;
+}
+
+#contactanos .agenda-tu-cita label {
+    display: block;
+    margin-top: 20px;
+}
+
+#contactanos input::placeholder {
+    color: white;
+  }
+
+#contactanos .agenda-tu-cita input,
+#contactanos .agenda-tu-cita select {
+    width: 100%;
+}
+
+#contactanos .icon {
+    float: left;
+    width: 50px;
+    padding-right: 15px;
+}
+
+#contactanos .info {
+    display: inline-table;
+    width: 100%;
+    margin: 10px 0;
+}
+
+#contactanos .info p {
+    padding-bottom: 8px;
+}
+
+#contactanos .info .text-gold {
+    font-size: 1.3rem;
+}
+
+#contactanos .book-now {
+    vertical-align: top;
+    padding-top: 50px;
+}
+
+
+/*FOOTER*/
+
+footer {
+    background-color: #004041;
+    color: #eeddc1;
+    padding: 60px 0;
+}
+
+footer .fourth {
+    vertical-align: top;
+}
+
+footer .logo {
+    width: 80%;
+}
+
+footer ul li{
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+footer .social ul {
+    margin-top: 15px;
+}
+
+footer .social ul li {
+    display: inline-block;
+    max-width: 40px;
+}
+
+footer .third {
+    width: 33%;
+    display: inline-block;
+}
+
+footer .text-right {
+    text-align: right;
+}
+
+footer .depa {
+    width: 15px;
+    float: right;
+    margin-left: 10px;
+    margin-top: -5px;
+}
+
+footer .by-montserrat {
+    font-size: .7rem;
+    margin-top: 20px;
+    letter-spacing: 3px;
+    line-height: 1.5;
+}
+
+footer hr {
+    margin-top: 20px;
+    border: none;
+    border-top: 1px solid #eeddc1;
+    margin-bottom: 30px;
+}
+
+footer .social a {
+    margin-right: 20px;
+    transition-duration: 2s;
+}
+
+footer .social a:hover {
+    transform: rotateY(360deg) !important;
+}
+
+
+@media screen and (max-width: 700px) {
+    #somos .two-thirds,
+    #somos .one-third,
+    #somos .half,
+    #bienestar .flex-item,
+    #contactanos .half,
+    footer .fourth,
+    main .half,
+    footer .third
+     {
+        flex-basis: 100% !important;
+        width: 100%;
+     }
+
+     #bienestar h2 {
+        font-size: 2rem;
+     }
+
+     #bienestar img {
+        width: 100%;
+     }
+
+     .topnav .menu {
+        padding: 0;
+     }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+
+    .topnav .menu {
+        float:none;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .topnav a:hover {
+        background-color: #023031;
+        color: #eeddc1;
+    }
+
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+
+    .topnav .book {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    footer h3 {
+        margin-top: 30px;
+    }
+
+    .container,
+    .flex-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #contactanos .agenda-tu-cita {
+        margin-top: 30px;
+    }
+
+    #servicios h3 {
+        font-size: 1rem;
+    }
+
+    #somos ul {
+        margin-top: 20px;
+    }
+
+    #bienestar .two-thirds {
+        width: 63%;
+    }
+
+    #body-and-mind {
+        background: url(../recursos/banner.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #contactanos .info .text-gold {
+        font-size: 1rem;
+    }
+
+    #servicios .box button {
+        position: relative;
+        margin-top: 30px;
+    }
+
+    #bienestar .flex-container {
+        flex-direction: column-reverse;
+    }
+
+    footer .third {
+        text-align: left !important;
+    }
+
+    footer .depa {
+        float: left;
+        margin: 0;
+        width: 10px;
+        margin-right: 5px;
+    }
+
+    footer .copyright {
+        margin-bottom: 10px;
+    }
+
+    .topnav.responsive a {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .topnav .book {
+        width: auto;
+    }
+
+    .topnav.responsive a {
+        width: max-content;
+        margin: 0 auto;
+    }
+
+    .text {
+        min-height: auto;
+    }
+
+    .topnav .social {
+        width: fit-content !important;
+        margin: auto !important;
+    }
+
+    main {
+        background: url(../recursos/slide1-mobile.jpg);
+        background-size: initial;
+        background-position: left top;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .topnav .book {
+        margin-bottom: 60px !important;
+        margin-top: 10px !important;
+    }
+
+    .redes {
+        display: flex;
+        justify-content: center;
+    }
+  }
